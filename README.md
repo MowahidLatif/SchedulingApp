@@ -171,3 +171,4 @@ The Blitz community is warm, safe, diverse, inclusive, and fun! Feel free to rea
 - [Forum discussions](https://github.com/blitz-js/blitz/discussions)
 - [How to Contribute](https://blitzjs.com/docs/contributing)
 - [Sponsor or donate](https://github.com/blitz-js/blitz#sponsors-and-donations)
+# SchedulingApp
