@@ -61,6 +61,9 @@ const Home: BlitzPage = () => {
   return (
     <div className="app">
       <h1 className="header">React Scheduling App</h1>
+      <Suspense fallback="Loading...">
+        <UserInfo />
+      </Suspense>
       <div>
         <Calendar onChange={setDate} value={date} onClickDay={() => setShowTime(true)} />
       </div>
