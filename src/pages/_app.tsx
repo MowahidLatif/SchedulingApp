@@ -3,6 +3,7 @@ import { AuthenticationError, AuthorizationError } from "blitz"
 import React from "react"
 import { withBlitz } from "src/blitz-client"
 import "../pages/App.css"
+// import "/node_modules/react-calendar/dist/Calendar.less"
 
 function RootErrorFallback({ error }: ErrorFallbackProps) {
   if (error instanceof AuthenticationError) {
@@ -28,6 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const getLayout = Component.getLayout || ((page) => page)
   return (
     <ErrorBoundary FallbackComponent={RootErrorFallback}>
+      <h1>PLEASE IGNORE, THIS IS ON _APP.TSX AND NAV WILL GO HERE!</h1>
       {getLayout(<Component {...pageProps} />)}
     </ErrorBoundary>
   )

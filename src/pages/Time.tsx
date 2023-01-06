@@ -1,8 +1,6 @@
 import { useState } from "react"
 import Calendar from "react-calendar"
-import "./App.css"
 import Times from "./Times"
-
 import React from "react"
 
 function Time(props) {

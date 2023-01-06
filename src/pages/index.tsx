@@ -10,9 +10,7 @@ import { Routes, BlitzPage } from "@blitzjs/next"
 import { useState } from "react"
 
 import Calendar from "react-calendar"
-// import "react-calendar/dist/Calendar.css"
 import Time from "./Time"
-import "../pages/App.css"
 
 const UserInfo = () => {
   const currentUser = useCurrentUser()
@@ -55,7 +53,7 @@ const UserInfo = () => {
 }
 
 const Home: BlitzPage = () => {
-  const [date, setDate] = useState(new Date())
+  const [date, setDate] = useState<Object>(new Date())
   const [showTime, setShowTime] = useState(false)
 
   return (
@@ -68,7 +66,7 @@ const Home: BlitzPage = () => {
         <Calendar onChange={setDate} value={date} onClickDay={() => setShowTime(true)} />
       </div>
 
-      {date.length > 0 ? (
+      {date.valueOf.length > 0 ? (
         <p>
           <span>Start: </span>
           {date[0].toDateString()}
@@ -79,7 +77,7 @@ const Home: BlitzPage = () => {
       ) : (
         <p>
           <span>Default selected date:</span>
-          {date.toDateString()}
+          {date.toString()}
         </p>
       )}
       <Time showTime={showTime} date={date} />
